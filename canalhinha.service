@@ -1,0 +1,15 @@
+[Unit]
+Description=Canalhinha service
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=10
+User=root
+WorkingDirectory=/root/canalhinha_discord_bot
+ExecStart=/root/canalhinha_discord_bot/start.sh
+
+[Install]
+WantedBy=multi-user.target

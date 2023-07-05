@@ -1,0 +1,20 @@
+{
+  "name": "canalhinha_discord_bot",
+  "version": "1.0.0",
+  "repository": "",
+  "description": "Bot dos canalhas",
+  "main": "index.js",
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Canalha",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "discord.js": "^14.7.0",
+    "dotenv": "^16.0.3",
+    "got": "11.0.0",
+    "lerolero": "^0.1.0"
+  }
+}
