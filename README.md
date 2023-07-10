@@ -37,9 +37,6 @@ cp canalhinha.service /etc/systemd/system
 
 # Register it with the systemd daemon
 systemctl daemon-reload
-
-# Give the start script executable permissions
-chmod 100 ./start.sh
 ```
 
 ### Required permissions

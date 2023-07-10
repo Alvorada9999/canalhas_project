@@ -9,7 +9,7 @@ Restart=on-failure
 RestartSec=10
 User=root
 WorkingDirectory=/root/canalhinha_discord_bot
-ExecStart=/root/canalhinha_discord_bot/start.sh
+ExecStart=/root/.nvm/versions/node/v18.14.2/bin/node /root/canalhinha_discord_bot/index.js
 
 [Install]
 WantedBy=multi-user.target
