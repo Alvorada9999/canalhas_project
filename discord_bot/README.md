@@ -5,7 +5,9 @@ Canalhas server discord bot.
 ## Table of content
 
 * [Requirements](#requirements)
-* [Author](#author)
+* [Configuration](#configuration)
+* [Installation](#installation)
+* [Required permissions](#required permissions)
 
 ## Requirements
 
@@ -46,7 +48,3 @@ systemctl daemon-reload
 Make sure that your bot has the `applications.commands` application scope enabled, which can be found under the `OAuth2` tab on the [developer portal](https://discord.com/developers/applications/)
 
 Enable the `Server Members Intent` and `Message Content Intent` which can be found under the `Bot` tab on the [developer portal](https://discord.com/developers/applications/)
-
-## Author
-
-[Alvorada9999](kenedyhenrique.buenosilva@gmail.com)
