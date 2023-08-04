@@ -1,0 +1,2 @@
+- Create a folder named "vazou_website" in "/var/www/"
+- Refer to ../apache_configs/README.md to continue with more instructions
