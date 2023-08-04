@@ -17,7 +17,15 @@ sudo systemctl reload apache2
 ```
 - If you have a domain already poiting to the ip where the apache server is hosted and a certificate is wanted
 ```bash
+#Install cerbot
+sudo apt-get update
+sudo apt-get install certbot python3-certbot-apache
+#Enable the needed modules
+sudo a2enmod ssl
+sudo a2enmod headers
+#Setup the certificates
 sudo certbot --apache
+#Restart apache to apply the changes
 sudo systemctl reload apache2
 ```
 Cerbot automatically will:
