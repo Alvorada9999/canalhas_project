@@ -15,10 +15,12 @@ Canalhas server discord bot.
 
 ### Configuration
 
+```
 1 - Put vrchat tokens inside "./credentils.json"
 2 - Edit the bot status message at "./config.json"
 3 - Put DISCORD_TOKEN and VR_CHAT_GROUP_ID inside a "./.env"
 4 - Edit lines 10, 11, 12 of "canalhas_discord_bot.service" to have right user, working directory and exec path
+```
 
 ### Installation
 
