@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vazou</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background_image.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      background-color: rgb(255, 255, 255);
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ahahah!</h1>
+    <input id="myInput" type="text" placeholder="">
+    <button onclick="send()">💣</button>
+  </div>
+  <script>
+    function send() {
+      var input = document.getElementById("myInput").value;
+      fetch("https://canalhas.gay/api", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(input),
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Response:', data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      document.getElementById("myInput").value = "";
+    }
+  </script>
+</body>
+</html>
