@@ -1,0 +1,15 @@
+[Unit]
+Description=Vazou service
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=10
+User=root
+WorkingDirectory=/var/www/vazamentos
+ExecStart=/root/.nvm/versions/node/v18.14.2/bin/node /var/www/vazamentos/main.js
+
+[Install]
+WantedBy=multi-user.target
