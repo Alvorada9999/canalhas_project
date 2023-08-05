@@ -7,13 +7,12 @@ Canalhas server discord bot.
 * [Requirements](#requirements)
 * [Configuration](#configuration)
 * [Installation](#installation)
-* [Required permissions](#required permissions)
+* [Required permissions](#required-permissions)
 
 ## Requirements
 
 - [Node](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
-- You should have $NVM_BIN set, that points to the folder where the node binary (Named as "node") is located, you already have that if you installed node from [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
 ### Configuration
 
