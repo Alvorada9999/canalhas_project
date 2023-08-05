@@ -6,10 +6,14 @@ This git repository stores source code and setup instructions to projects made b
 ## Folder structure
 
 ```
-├─── apache_configs (Setup instructions and configurations files)
+├─── apache_configs (Setup instructions and configuration files)
 ├─── discord_bot (Setup instructions and source code)
-└─── vazou_website (Source code and it's assets)
+├─── vazou_website (Setup instructions, source code and it's assets)
+└─── vazou_server (Setup instructions and source code)
 ```
+## System overview
+![image info](./canalhas_project_diagram.drawio.png)
+
 ###### Apart from the "discord_bot" project, all others has related apache configurations, see "apache_configs/README"
 ###### Keep in mind this repository uses [Git LFS](https://git-lfs.com/), you need that to get the assets back, after cloning, run:
 ```
